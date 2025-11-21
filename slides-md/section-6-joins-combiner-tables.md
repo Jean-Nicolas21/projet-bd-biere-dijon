@@ -144,6 +144,8 @@ INNER JOIN student.note n ON e.id_etudiant = n.id_etudiant;
 
 **Résultat** : Toutes les combinaisons étudiant-note qui existent (uniquement les étudiants qui ont des notes)
 
+Retrouver totues les notes des étudiants 
+
 ---
 
 ## 🔍 Alias de tables
@@ -575,12 +577,13 @@ GROUP BY id_etudiant;
 
 ```sql
 SELECT 
+    e.id_etudiant,
     e.nom,
     e.prenom,
     COUNT(n.id_note) AS nombre_notes
 FROM student.etudiant e
 LEFT JOIN student.note n ON e.id_etudiant = n.id_etudiant
-GROUP BY e.id_etudiant, e.nom, e.prenom
+GROUP BY e.id_etudiant
 ORDER BY nombre_notes DESC;
 ```
 
