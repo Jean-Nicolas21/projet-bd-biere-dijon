@@ -40,7 +40,10 @@ erDiagram
 	BARS||--o{TARIFICATION:"1 à N, propose / sont réportoriées"
 	BIERES||--o{TARIFICATION:"1 à N, côute / sont appliquées"
 
-  ##
+  ## Diagramme Mermaid
+
+  Mermaid_Chart.png
 
   
+
 
