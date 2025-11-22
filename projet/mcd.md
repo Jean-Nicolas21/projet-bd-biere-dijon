@@ -42,8 +42,9 @@ erDiagram
 
   ## Diagramme Mermaid
 
-  Mermaid_Chart.png
+  ![Diagramme MCD](Mermaid_Chart.png)
 
   
+
 
 
