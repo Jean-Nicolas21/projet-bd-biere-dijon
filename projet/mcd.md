@@ -13,14 +13,14 @@ erDiagram
 	BARS {
 		SERIAL id_bar PK ""  
 		INT id_quartier FK "FK vers QUARTIERS, NOT NULL"  
-		VARCHAR nom  "UNIQUE, NOT NULL, contient maximum 255 cractères"  
+		VARCHAR nom  "UNIQUE, NOT NULL, contient maximum 255 caractères"  
 		TEXT adresse  ""  
 	}
 
 	BIERES {
 		SERIAL id_biere PK ""  
-		VARCHAR nom  "UNIQUE, NOT NULL, contient maximum 255 cractères"  
-		VARCHAR type  "NOT NULL, contient maximum 255 cractères"  
+		VARCHAR nom  "UNIQUE, NOT NULL, contient maximum 255 caractères"  
+		VARCHAR type  "NOT NULL, contient maximum 255 caractères"  
 		NUMERIC degre  "NOT NULL, > 0, format (4,2)"  
 	}
 
@@ -32,7 +32,7 @@ erDiagram
 
 	QUARTIERS {
 		SERIAL id_quartier PK ""  
-		VARCHAR nom  "UNIQUE, NOT NULL, contient maximum 255 cractères"  
+		VARCHAR nom  "UNIQUE, NOT NULL, contient maximum 255 caractères"  
 		VARCHAR zone  "contient maximum 255 cractères"  
 	}
 
@@ -43,3 +43,4 @@ erDiagram
   ##
 
   
+
