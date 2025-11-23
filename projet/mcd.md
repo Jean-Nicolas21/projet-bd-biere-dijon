@@ -73,3 +73,4 @@ erDiagram
 |  | id_bar | Identifiant unique du bar (clé étrangère). |
 |  | id_biere | Identifiant unique de la bière(clé étrangère). |
 |  | prix | Valeur d'une tarification. |
+
