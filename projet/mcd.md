@@ -1,7 +1,6 @@
 # MCD
 
 ## Code Mermaid
-
 ---
 config:
   layout: elk
@@ -9,14 +8,7 @@ title: projet-bd-biere-dijon
 ---
 erDiagram
 	direction TB
-  
-	BARS {
-		SERIAL id_bar PK ""  
-		INT id_quartier FK "FK vers QUARTIERS, NOT NULL"  
-		VARCHAR nom  "UNIQUE, NOT NULL, contient maximum 255 caractères"  
-		TEXT adresse  ""  
-	}
-
+	
 	BIERES {
 		SERIAL id_biere PK ""  
 		VARCHAR nom  "UNIQUE, NOT NULL, contient maximum 255 caractères"  
@@ -30,10 +22,17 @@ erDiagram
 		NUMERIC prix  "NOT NULL, > 0,format (5,2)"  
 	}
 
+	BARS {
+		SERIAL id_bar PK ""  
+		INT id_quartier FK "FK vers QUARTIERS, NOT NULL"  
+		VARCHAR nom  "UNIQUE, NOT NULL, contient maximum 255 caractères"  
+		TEXT adresse  "NOT NULL"  
+	}
+
 	QUARTIERS {
 		SERIAL id_quartier PK ""  
 		VARCHAR nom  "UNIQUE, NOT NULL, contient maximum 255 caractères"  
-		VARCHAR zone  "contient maximum 255 cractères"  
+		VARCHAR zone  "contient maximum 255 caractères, NOT NULL"  
 	}
 
 	QUARTIERS||--o{BARS:"1 à N, détient / occupe"
