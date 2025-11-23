@@ -10,7 +10,7 @@ Les entités auront différents attributs:
 - les quartiers; identifiant quartier (clé primaire), nom, zone
 - les bars; identifiant bars (clé primaire), identifiant quartier(clé étrangère), nom, adresse
 - les bières; identifiant bières(clé primaire), type, nom, degré
-- la tarification; identifiant bière + identifiant bars (clé primaire), identifiant bière (clé étrangère), identifiant bars (clé étrangère), valeur
+- la tarification; identifiant bière + identifiant bars (clé primaire), identifiant bière (clé étrangère), identifiant bars (clé étrangère), prix
 
 ## Relations
 
@@ -33,3 +33,4 @@ Le système permettra de faire:
 - Établir le prix moyen d'un bière selon un quartier donné ou dans la ville en entier
 - Rechercher un bar selon une son nom ou adresse, ou avec une partie du nom ou de l'adresse
   
+
